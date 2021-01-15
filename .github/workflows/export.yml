@@ -38,7 +38,7 @@ jobs:
       with:
         solution-file: out/CXO_SITEMAPS.zip
         solution-folder: out/solutions/CXO_SITEMAPS
-        solution-type: 'Managed'
+        solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
