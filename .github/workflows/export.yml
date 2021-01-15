@@ -30,7 +30,7 @@ jobs:
         user-name: 'cxointegration.dev@clubmedoffice.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
         solution-name: CXO_SITEMAPS
-        solution-output-file: 'PatchDev.zip'
+        solution-output-file: 'CXO_SITEMAPS.zip'
         working-directory: 'out'
 
     - name: unpack-solution action
