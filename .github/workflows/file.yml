@@ -1,4 +1,4 @@
-name: ci
+name: CI
 on:
   workflow_dispatch:
 jobs:
@@ -16,5 +16,3 @@ jobs:
         with:
           path: package.json
           trim: true
-      - name: Echo package.json
-        run: echo "${{ steps.package.outputs.content }}"
