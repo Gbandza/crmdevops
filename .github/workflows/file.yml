@@ -1,4 +1,4 @@
-name: MyCI
+name: ci
 on:
   workflow_dispatch:
 jobs:
