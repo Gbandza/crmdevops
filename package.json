@@ -1,1 +1,4 @@
-[KIWI_job, KIWI_coffee, KIWI_ngando]
+{
+  hello: "world",
+  oh: "Lord"
+}
