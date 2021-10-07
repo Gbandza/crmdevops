@@ -1,15 +1,20 @@
-# This is it
 name: MyCI
 on:
   workflow_dispatch:
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Read package.json
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+      - uses: ./
         id: package
-        uses: juliangruber/read-file-action@v1
         with:
-          path: ./package.json
+          path: package.json
+          trim: true
       - name: Echo package.json
         run: echo "${{ steps.package.outputs.content }}"
