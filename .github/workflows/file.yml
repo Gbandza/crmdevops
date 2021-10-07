@@ -1,6 +1,8 @@
 name: MyCI
-runs-on:
-steps:
+on:
+  workflow_dispatch:
+jobs:
+  steps:
   - name: Read package.json
     id: package
     uses: juliangruber/read-file-action@v1
